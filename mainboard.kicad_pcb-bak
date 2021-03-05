@@ -470,7 +470,7 @@
   )
 
   (module 434111043826:434111043826 (layer F.Cu) (tedit 6040EFD3) (tstamp 60422856)
-    (at 152.365 100.155)
+    (at 157.48 119.38)
     (descr "<B>WS-TASV</B><BR>6x3.5 mm SMD Tact Switch, 2 pins")
     (path /6040F46E)
     (fp_text reference S1 (at -0.1556 -3.1769) (layer F.SilkS)
