@@ -262,24 +262,21 @@ Wire Wire Line
 Connection ~ 9250 2700
 Wire Wire Line
 	9250 2700 9900 2700
-Text GLabel 9650 1400 2    50   Input ~ 0
+Text GLabel 9800 1400 2    50   Input ~ 0
 3V3
-Connection ~ 9050 1700
 $Comp
 L power:GND #PWR01
 U 1 1 6046FD41
-P 9050 1700
-F 0 "#PWR01" H 9050 1450 50  0001 C CNN
-F 1 "GND" H 9055 1527 50  0000 C CNN
-F 2 "" H 9050 1700 50  0001 C CNN
-F 3 "" H 9050 1700 50  0001 C CNN
-	1    9050 1700
+P 9350 1800
+F 0 "#PWR01" H 9350 1550 50  0001 C CNN
+F 1 "GND" H 9355 1627 50  0000 C CNN
+F 2 "" H 9350 1800 50  0001 C CNN
+F 3 "" H 9350 1800 50  0001 C CNN
+	1    9350 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 1700 9050 1600
-Wire Wire Line
-	9350 1700 9050 1700
+	9350 1700 9350 1800
 $Comp
 L mainboard-rescue:XT60-M-XT60-M J2
 U 1 1 60455B8E
@@ -293,17 +290,6 @@ F 5 "1.2" H 8750 1500 50  0001 L BNN "PARTREV"
 F 6 "IPC-7251" H 8750 1500 50  0001 L BNN "STANDARD"
 	1    8750 1500
 	-1   0    0    1   
-$EndComp
-$Comp
-L Regulator_Linear:AMS1117-3.3 U3
-U 1 1 60450E15
-P 9350 1400
-F 0 "U3" H 9350 1642 50  0000 C CNN
-F 1 "AMS1117-3.3" H 9350 1551 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9350 1600 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 9450 1150 50  0001 C CNN
-	1    9350 1400
-	1    0    0    -1  
 $EndComp
 Text GLabel 1900 1450 1    50   Input ~ 0
 3V3
@@ -676,14 +662,48 @@ Connection ~ 4050 6100
 Wire Wire Line
 	4050 6100 4200 6100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR04
 U 1 1 60477405
 P 4500 6100
-F 0 "#PWR?" H 4500 5850 50  0001 C CNN
+F 0 "#PWR04" H 4500 5850 50  0001 C CNN
 F 1 "GND" V 4505 5972 50  0000 R CNN
 F 2 "" H 4500 6100 50  0001 C CNN
 F 3 "" H 4500 6100 50  0001 C CNN
 	1    4500 6100
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	9650 1400 9750 1400
+$Comp
+L Regulator_Linear:AMS1117-3.3 U3
+U 1 1 60450E15
+P 9350 1400
+F 0 "U3" H 9350 1642 50  0000 C CNN
+F 1 "AMS1117-3.3" H 9350 1551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9350 1600 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 9450 1150 50  0001 C CNN
+	1    9350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1600 9050 1700
+Wire Wire Line
+	9050 1700 9350 1700
+Connection ~ 9350 1700
+$Comp
+L Device:CP C10
+U 1 1 60484A4F
+P 9750 1550
+F 0 "C10" H 9868 1596 50  0000 L CNN
+F 1 "CP" H 9868 1505 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J_Pad1.25x1.05mm_HandSolder" H 9788 1400 50  0001 C CNN
+F 3 "~" H 9750 1550 50  0001 C CNN
+	1    9750 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 9750 1400
+Wire Wire Line
+	9750 1400 9800 1400
+Wire Wire Line
+	9750 1700 9350 1700
 $EndSCHEMATC
