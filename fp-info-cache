@@ -1,5 +1,5 @@
-19087387951639263
-434111043826
+19094644607408868
+434111043826-2
 434111043826
 <B>WS-TASV</B><BR>6x3.5 mm SMD Tact Switch, 2 pins
 
@@ -50721,6 +50721,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+ESP32-WROOM-32E__16MB_
+MODULE_ESP32-WROOM-32E_(16MB)
+
+
+0
+59
+59
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -83041,6 +83048,20 @@ AMASS_XT60-M
 2
 2
 mylibs
+CAPAE660X770N
+ECAP (Aluminum Electrolytic Capacitor), 6.60 X 7.70 mm body<p>ECAP (Aluminum Electrolytic Capacitor) package with body size 6.60 X 7.70 mm</p>
+
+0
+2
+2
+mylibs
+DPAK228P994X240-4N
+
+
+0
+3
+3
+mylibs
 MODULE_ESP32-WROOM-32E_(16MB)
 
 
@@ -83054,3 +83075,10 @@ MOLEX_105017-1001
 0
 11
 11
+mylibs
+SOIC127P605X150-16N
+
+
+0
+16
+16
