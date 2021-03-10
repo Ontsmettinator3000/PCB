@@ -684,4 +684,8 @@ Text GLabel 3950 1750 2    50   Input ~ 0
 3V3
 Text GLabel 3950 2050 2    50   Input ~ 0
 Mosfet_Trig
+Text Notes 3950 2650 0    50   ~ 0
+PWM\n
+Text Notes 3950 2750 0    50   ~ 0
+PWM\n
 $EndSCHEMATC

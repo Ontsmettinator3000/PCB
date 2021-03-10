@@ -533,8 +533,6 @@ F 4 "Diodes" H 3300 6700 50  0001 L BNN "MANUFACTURER"
 	1    3300 6700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 6400 0    50   Input ~ 0
-mute
 Connection ~ 4950 6650
 Wire Wire Line
 	5250 6650 5250 6600
@@ -688,4 +686,7 @@ Text Notes 3950 2650 0    50   ~ 0
 PWM\n
 Text Notes 3950 2750 0    50   ~ 0
 PWM\n
+NoConn ~ 2700 6400
+Text GLabel 3950 2350 2    50   Input ~ 0
+SHND
 $EndSCHEMATC
