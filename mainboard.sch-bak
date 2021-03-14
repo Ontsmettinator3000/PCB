@@ -458,15 +458,11 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 9450 1150 50  0001 C C
 	1    9350 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9050 1700 9350 1700
 Connection ~ 9350 1700
 Text GLabel 8410 4870 2    50   Input ~ 0
 3V3
 Text GLabel 4200 1750 2    50   Input ~ 0
 3V3
-Text GLabel 3950 2050 2    50   Input ~ 0
-Mosfet_Trig
 Text Notes 3950 2650 0    50   ~ 0
 PWM\n
 Text Notes 3950 2750 0    50   ~ 0
@@ -507,14 +503,9 @@ Wire Wire Line
 Wire Wire Line
 	8450 1100 8450 1400
 Wire Wire Line
-	8450 1400 9050 1400
+	8450 1400 8800 1400
 Wire Wire Line
-	8200 1500 9050 1500
-Wire Wire Line
-	9050 1500 9050 1700
-Wire Wire Line
-	8200 1700 9050 1700
-Connection ~ 9050 1700
+	8200 1500 8450 1500
 NoConn ~ 8200 1200
 NoConn ~ 8200 1300
 NoConn ~ 8200 1400
@@ -621,11 +612,11 @@ Wire Notes Line
 	6970 4330 11220 4330
 Text Notes 10015 5640 0    150  ~ 0
 LCD
-Text GLabel 10600 6050 3    50   Input ~ 0
-TFT_MISO
-Text GLabel 10500 6050 3    50   Input ~ 0
-3V3
 Text GLabel 10400 6050 3    50   Input ~ 0
+TFT_MISO
+Text GLabel 10600 6050 3    50   Input ~ 0
+3V3
+Text GLabel 10500 6050 3    50   Input ~ 0
 TFT_CLK
 Text GLabel 10300 6050 3    50   Input ~ 0
 TFT_MOSI
@@ -809,4 +800,30 @@ F 3 "" H 4550 7400 50  0001 C CNN
 	1    4550 7400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8200 1700 8450 1700
+Wire Wire Line
+	8450 1500 8450 1700
+Connection ~ 8450 1700
+Wire Wire Line
+	8450 1700 8800 1700
+$Comp
+L Device:C C10
+U 1 1 604E83AF
+P 8800 1550
+F 0 "C10" H 8915 1596 50  0000 L CNN
+F 1 "10u" H 8915 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8838 1400 50  0001 C CNN
+F 3 "~" H 8800 1550 50  0001 C CNN
+	1    8800 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 8800 1400
+Wire Wire Line
+	8800 1400 9050 1400
+Connection ~ 8800 1700
+Wire Wire Line
+	8800 1700 9350 1700
+Text GLabel 3950 2050 2    50   Input ~ 0
+Mosfet_Trig
 $EndSCHEMATC
