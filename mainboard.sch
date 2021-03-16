@@ -488,11 +488,7 @@ F 3 "" H 7960 4970 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8200 1100 8450 1100
-Wire Wire Line
-	8450 1100 8450 1400
-Wire Wire Line
-	8450 1400 8800 1400
+	8600 1400 8800 1400
 Wire Wire Line
 	8200 1500 8450 1500
 NoConn ~ 8200 1200
@@ -500,9 +496,6 @@ NoConn ~ 8200 1300
 NoConn ~ 8200 1400
 Text GLabel 8600 1100 2    50   Input ~ 0
 5V
-Wire Wire Line
-	8600 1100 8450 1100
-Connection ~ 8450 1100
 NoConn ~ 3900 6500
 NoConn ~ 3900 6600
 $Comp
@@ -563,22 +556,22 @@ TFT_MISO
 Text GLabel 3950 3550 2    50   Input ~ 0
 INR
 NoConn ~ 2700 6600
-Text Notes 7765 5645 0    150  ~ 0
+Text Notes 7265 5745 0    150  ~ 0
 Pomp
 $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 6053B267
-P 7820 6160
-F 0 "J3" H 7712 5835 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 7712 5926 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7820 6160 50  0001 C CNN
-F 3 "~" H 7820 6160 50  0001 C CNN
-	1    7820 6160
+P 7320 6260
+F 0 "J3" H 7212 5935 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 7212 6026 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7320 6260 50  0001 C CNN
+F 3 "~" H 7320 6260 50  0001 C CNN
+	1    7320 6260
 	-1   0    0    1   
 $EndComp
-Text GLabel 8020 6060 2    50   Input ~ 0
+Text GLabel 7520 6160 2    50   Input ~ 0
 Mosfet_Out-
-Text GLabel 8020 6160 2    50   Input ~ 0
+Text GLabel 7520 6260 2    50   Input ~ 0
 5V
 Text Notes 9775 4600 0    150  ~ 0
 Speaker\n
@@ -859,4 +852,47 @@ Wire Wire Line
 Connection ~ 9750 1400
 Wire Wire Line
 	9750 1400 9950 1400
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 6050D5A1
+P 8400 1100
+F 0 "SW1" H 8400 1335 50  0000 C CNN
+F 1 "SW_SPST" H 8400 1244 50  0000 C CNN
+F 2 "434111043826:434111043826" H 8400 1100 50  0001 C CNN
+F 3 "~" H 8400 1100 50  0001 C CNN
+	1    8400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1100 8600 1400
+Text Notes 8115 5745 0    150  ~ 0
+IR beam
+$Comp
+L Connector:Conn_01x03_Female J8
+U 1 1 60521D0E
+P 8450 6225
+F 0 "J8" H 8342 5900 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 8342 5991 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8450 6225 50  0001 C CNN
+F 3 "~" H 8450 6225 50  0001 C CNN
+	1    8450 6225
+	-1   0    0    1   
+$EndComp
+Text GLabel 8650 6125 2    50   Input ~ 0
+IRB
+Wire Notes Line
+	8072 5320 8072 6538
+Text GLabel 8650 6325 2    50   Input ~ 0
+3V3
+$Comp
+L power:GND #PWR?
+U 1 1 6055B549
+P 8650 6225
+F 0 "#PWR?" H 8650 5975 50  0001 C CNN
+F 1 "GND" V 8655 6097 50  0000 R CNN
+F 2 "" H 8650 6225 50  0001 C CNN
+F 3 "" H 8650 6225 50  0001 C CNN
+	1    8650 6225
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
