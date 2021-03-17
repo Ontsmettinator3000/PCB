@@ -553,8 +553,6 @@ Text GLabel 3950 2950 2    50   Input ~ 0
 TFT_CLK
 Text GLabel 3950 3050 2    50   Input ~ 0
 TFT_MISO
-Text GLabel 3950 3550 2    50   Input ~ 0
-INR
 NoConn ~ 2700 6600
 Text Notes 7265 5745 0    150  ~ 0
 Pomp
@@ -596,8 +594,6 @@ Text Notes 10015 5640 0    150  ~ 0
 LCD
 Text GLabel 10400 6050 3    50   Input ~ 0
 TFT_MISO
-Text GLabel 10600 6050 3    50   Input ~ 0
-3V3
 Text GLabel 10500 6050 3    50   Input ~ 0
 TFT_CLK
 Text GLabel 10300 6050 3    50   Input ~ 0
@@ -852,19 +848,8 @@ Wire Wire Line
 Connection ~ 9750 1400
 Wire Wire Line
 	9750 1400 9950 1400
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 6050D5A1
-P 8400 1100
-F 0 "SW1" H 8400 1335 50  0000 C CNN
-F 1 "SW_SPST" H 8400 1244 50  0000 C CNN
-F 2 "434111043826:434111043826" H 8400 1100 50  0001 C CNN
-F 3 "~" H 8400 1100 50  0001 C CNN
-	1    8400 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8600 1100 8600 1400
+	8600 1100 8600 1200
 Text Notes 8115 5745 0    150  ~ 0
 IR beam
 $Comp
@@ -885,14 +870,38 @@ Wire Notes Line
 Text GLabel 8650 6325 2    50   Input ~ 0
 3V3
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 6055B549
 P 8650 6225
-F 0 "#PWR?" H 8650 5975 50  0001 C CNN
+F 0 "#PWR0103" H 8650 5975 50  0001 C CNN
 F 1 "GND" V 8655 6097 50  0000 R CNN
 F 2 "" H 8650 6225 50  0001 C CNN
 F 3 "" H 8650 6225 50  0001 C CNN
 	1    8650 6225
 	0    -1   -1   0   
 $EndComp
+$Comp
+L SparkFun-Switches:SWITCH-SPDT-SMD-RIGHT-ANGLE S3
+U 1 1 6053016E
+P 8300 1100
+F 0 "S3" H 8350 1476 45  0000 C CNN
+F 1 "SWITCH-SPDT-SMD-RIGHT-ANGLE" H 8350 1392 45  0000 C CNN
+F 2 "SWITCH_SPST_SMD_A" H 8300 1350 20  0001 C CNN
+F 3 "" H 8300 1100 50  0001 C CNN
+F 4 "SWCH-10651" H 8350 1297 60  0000 C CNN "Field4"
+	1    8300 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1200 8600 1200
+Connection ~ 8600 1200
+Wire Wire Line
+	8600 1200 8600 1400
+NoConn ~ 8500 1000
+Text GLabel 3950 2850 2    50   Input ~ 0
+TFT_EN
+Text GLabel 10600 6050 3    50   Input ~ 0
+TFT_EN
+Text GLabel 3950 3550 2    50   Input ~ 0
+INR
 $EndSCHEMATC

@@ -630,8 +630,6 @@ F 3 "~" H 10200 5850 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	470  5320 11210 5320
-Text Notes 5750 2250 0    50   ~ 0
-Moet IO5 aan pullup?
 Wire Notes Line
 	9170 2360 9170 6535
 Text Notes 9600 2700 0    150  ~ 0
