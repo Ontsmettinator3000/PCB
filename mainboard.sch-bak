@@ -710,7 +710,7 @@ U 1 1 6058674A
 P 10000 3900
 F 0 "J7" H 9892 3475 50  0000 C CNN
 F 1 "Conn_01x04_Female" H 9892 3566 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10000 3900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10000 3900 50  0001 C CNN
 F 3 "~" H 10000 3900 50  0001 C CNN
 	1    10000 3900
 	-1   0    0    1   
@@ -909,4 +909,6 @@ NoConn ~ 3950 2550
 NoConn ~ 3950 2450
 NoConn ~ 3950 2650
 NoConn ~ 3950 2750
+Text Notes 4350 6200 0    50   ~ 0
+5V of 3V3????\n\n
 $EndSCHEMATC

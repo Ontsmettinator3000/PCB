@@ -419,7 +419,7 @@ F 3 "" H 4950 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4200 6100 2    50   Input ~ 0
-5V
+3V3
 Wire Wire Line
 	3900 6100 4050 6100
 Connection ~ 4050 6100
