@@ -863,7 +863,7 @@ F 3 "" H 8650 6225 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SparkFun-Switches:SWITCH-SPDT-SMD-RIGHT-ANGLE S3
+L mainboard-rescue:SWITCH-SPDT-SMD-RIGHT-ANGLE-SparkFun-Switches S3
 U 1 1 6053016E
 P 8300 1100
 F 0 "S3" H 8350 1476 45  0000 C CNN
