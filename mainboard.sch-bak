@@ -456,6 +456,7 @@ Text Notes 3950 2650 0    50   ~ 0
 PWM\n
 Text Notes 3950 2750 0    50   ~ 0
 PWM\n
+NoConn ~ 2700 6400
 Text GLabel 3950 3850 2    50   Input ~ 0
 SHND
 $Comp
@@ -534,7 +535,7 @@ Wire Wire Line
 Connection ~ 1800 2650
 Wire Wire Line
 	7895 3555 8045 3555
-Text GLabel 1800 3150 0    50   Input ~ 0
+Text GLabel 2350 3150 0    50   Input ~ 0
 IRB
 Text GLabel 3950 2150 2    50   Input ~ 0
 PN532_IRQ
@@ -910,24 +911,4 @@ NoConn ~ 3950 2650
 NoConn ~ 3950 2750
 Text Notes 4350 6200 0    50   ~ 0
 5V of 3V3????\n\n
-$Comp
-L Device:R R9
-U 1 1 606C98CA
-P 2000 3300
-F 0 "R9" H 2070 3346 50  0000 L CNN
-F 1 "10K" H 2070 3255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1930 3300 50  0001 C CNN
-F 3 "~" H 2000 3300 50  0001 C CNN
-	1    2000 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 3150 2000 3150
-Connection ~ 2000 3150
-Wire Wire Line
-	2000 3150 1800 3150
-Text GLabel 2000 3450 3    50   Input ~ 0
-3V3
-Text GLabel 2700 6400 0    50   Input ~ 0
-5V
 $EndSCHEMATC
