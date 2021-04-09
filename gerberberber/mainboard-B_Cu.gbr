@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.9-0-10_14)*%
-%TF.CreationDate,2021-04-08T22:14:15+02:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.9)-1*%
+%TF.CreationDate,2021-04-09T14:08:34+02:00*%
 %TF.ProjectId,mainboard,6d61696e-626f-4617-9264-2e6b69636164,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L2,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.9-0-10_14)) date 2021-04-08 22:14:15*
+G04 Created by KiCad (PCBNEW (5.1.9)-1) date 2021-04-09 14:08:34*
 %MOMM*%
 %LPD*%
 G01*
@@ -145,11 +145,11 @@ D11*
 X132715000Y-104140000D03*
 %TD*%
 D10*
-%TO.P,J5,2*%
+%TO.P,SPR,2*%
 %TO.N,+OUT_R*%
 X98425000Y-106934000D03*
 D11*
-%TO.P,J5,1*%
+%TO.P,SPR,1*%
 %TO.N,-OUT_R*%
 X98425000Y-109474000D03*
 %TD*%
@@ -184,11 +184,11 @@ D11*
 X139065000Y-88900000D03*
 %TD*%
 D10*
-%TO.P,J3,2*%
+%TO.P,PMP,2*%
 %TO.N,Mosfet_Out-*%
 X104648000Y-106934000D03*
 D11*
-%TO.P,J3,1*%
+%TO.P,PMP,1*%
 %TO.N,5V*%
 X104648000Y-109474000D03*
 %TD*%
