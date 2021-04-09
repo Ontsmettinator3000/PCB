@@ -108,7 +108,7 @@ F 7 "Espressif Systems" H 3150 2950 50  0001 L BNN "MANUFACTURER"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 434111043826:434111043826 S2
+L mainboard-rescue:434111043826-434111043826 S2
 U 1 1 6040FDB7
 P 5400 1950
 F 0 "S2" H 5400 2158 50  0000 C CNN
@@ -124,7 +124,7 @@ F 8 "1800" H 5400 1950 50  0001 L BNN "QTY"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 434111043826:434111043826 S1
+L mainboard-rescue:434111043826-434111043826 S1
 U 1 1 6040F46E
 P 1700 1950
 F 0 "S1" H 1700 2158 50  0000 C CNN
@@ -963,4 +963,61 @@ Wire Wire Line
 	7400 6300 7450 6300
 NoConn ~ 2350 3550
 NoConn ~ 2350 3450
+$Comp
+L Connector:Conn_01x01_Female J9
+U 1 1 60709A36
+P 4125 4300
+F 0 "J9" H 4153 4326 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4153 4235 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 4125 4300 50  0001 C CNN
+F 3 "~" H 4125 4300 50  0001 C CNN
+	1    4125 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J10
+U 1 1 6070D3CA
+P 4125 4500
+F 0 "J10" H 4153 4526 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4153 4435 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 4125 4500 50  0001 C CNN
+F 3 "~" H 4125 4500 50  0001 C CNN
+	1    4125 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J11
+U 1 1 6070EC80
+P 4125 4700
+F 0 "J11" H 4153 4726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4153 4635 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 4125 4700 50  0001 C CNN
+F 3 "~" H 4125 4700 50  0001 C CNN
+	1    4125 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J12
+U 1 1 607103E8
+P 4125 4900
+F 0 "J12" H 4153 4926 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4153 4835 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 4125 4900 50  0001 C CNN
+F 3 "~" H 4125 4900 50  0001 C CNN
+	1    4125 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 4050 3925 4300
+Connection ~ 3925 4300
+Wire Wire Line
+	3925 4700 3925 4500
+Wire Wire Line
+	3925 4300 3925 4500
+Connection ~ 3925 4500
+Wire Wire Line
+	3925 4900 3925 4700
+Connection ~ 3925 4700
+Text Notes 4300 4150 0    50   ~ 0
+Mounting holes
 $EndSCHEMATC
