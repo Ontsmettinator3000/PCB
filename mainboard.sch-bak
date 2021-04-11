@@ -928,8 +928,6 @@ Wire Wire Line
 Connection ~ 8050 3550
 Wire Wire Line
 	8050 3550 8250 3550
-Text GLabel 6350 6050 0    50   Input ~ 0
-5V
 $Comp
 L Device:D D2
 U 1 1 60703FAA
@@ -941,8 +939,6 @@ F 3 "~" H 7400 6100 50  0001 C CNN
 	1    7400 6100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6350 6050 6450 6050
 Wire Wire Line
 	7750 2900 8450 2900
 Wire Wire Line

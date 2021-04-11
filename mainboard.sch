@@ -965,7 +965,7 @@ U 1 1 60709A36
 P 5725 4300
 F 0 "J9" H 5753 4326 50  0000 L CNN
 F 1 "Conn_01x01_Female" H 5753 4235 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 5725 4300 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 5725 4300 50  0001 C CNN
 F 3 "~" H 5725 4300 50  0001 C CNN
 	1    5725 4300
 	1    0    0    -1  
@@ -976,7 +976,7 @@ U 1 1 6070D3CA
 P 5725 4500
 F 0 "J10" H 5753 4526 50  0000 L CNN
 F 1 "Conn_01x01_Female" H 5753 4435 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 5725 4500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 5725 4500 50  0001 C CNN
 F 3 "~" H 5725 4500 50  0001 C CNN
 	1    5725 4500
 	1    0    0    -1  
@@ -987,7 +987,7 @@ U 1 1 6070EC80
 P 5725 4700
 F 0 "J11" H 5753 4726 50  0000 L CNN
 F 1 "Conn_01x01_Female" H 5753 4635 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 5725 4700 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 5725 4700 50  0001 C CNN
 F 3 "~" H 5725 4700 50  0001 C CNN
 	1    5725 4700
 	1    0    0    -1  
@@ -998,7 +998,7 @@ U 1 1 607103E8
 P 5725 4900
 F 0 "J12" H 5753 4926 50  0000 L CNN
 F 1 "Conn_01x01_Female" H 5753 4835 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 5725 4900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 5725 4900 50  0001 C CNN
 F 3 "~" H 5725 4900 50  0001 C CNN
 	1    5725 4900
 	1    0    0    -1  
@@ -1014,10 +1014,10 @@ Connection ~ 5525 4700
 Text Notes 5750 4150 0    50   ~ 0
 Mounting holes
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 6072A593
 P 5525 4900
-F 0 "#PWR?" H 5525 4650 50  0001 C CNN
+F 0 "#PWR0104" H 5525 4650 50  0001 C CNN
 F 1 "GND" H 5530 4727 50  0000 C CNN
 F 2 "" H 5525 4900 50  0001 C CNN
 F 3 "" H 5525 4900 50  0001 C CNN
